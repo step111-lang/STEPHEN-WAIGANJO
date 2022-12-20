@@ -1,0 +1,329 @@
+
+*{
+margin:0;
+padding:0;
+border-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+position: absolute;
+border-sizing: border-box;
+color:rgba(23,20,23,0.7);
+background-size:;
+width:100%;
+min-height:350vh;
+
+/*background:rgba(203,230,230,1);*/
+}
+.navbar{
+position: sticky;
+min-height:40px;
+width:100%;
+background:white;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+align-items: center;
+margin-top:2px;
+}
+.logo{
+position: relative;
+font-size:15px;
+top:50%;
+font-weight:bold;
+}
+.logo:hover{
+position: relative;
+border-bottom:2px solid blue;
+color:blue;
+}
+.foot{
+position: absolute;
+display:flex;
+flex-direction:column;
+background:rgba(20,48,48,0.1);
+justify-content: center;
+align-items: center;
+font-size:12px;
+border-top:2px solid rgba(40,48,48,0.01);
+box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.1);
+width:100%;
+bottom:0;
+height:inherit;
+margin-top:auto;
+
+}
+.container {
+position: absolute;
+display:flex;
+width:100%;
+flex-direction:column;
+align-items: center;
+bottom:12%;
+background:;
+}
+.container .cont{
+position: relative;
+height:200px;
+width:200px;
+background-image:url("https://mimo.app/i/hacker.png");
+object-fit:fill;
+object-repeat:no-repeat;
+background-position: center;
+box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.05);
+display:flex;
+filter:blur(0.1px);
+margin:5%;
+align-items: center;
+flex-direction:column;
+font-size:15px;
+justify-content: ;
+z-index:1;
+border:none;
+bottom:20%;
+}
+.cont h6{
+position: absolute;
+margin-top:47%;
+color:black;
+font-style:italic;
+transition:0.5s ease;
+}
+.cont h5{
+position: absolute;
+top:;
+}
+
+
+.cont:hover h5{
+position: absolute;
+font-size:15px;
+transition:0.5s ease-out;
+font-weight:bold;
+}
+.cont:hover{
+
+}
+.cont:hover:after{
+
+}
+.cont-follow{
+position: absolute;
+display:flex;
+height:5%;
+width:100%;
+background:rgba(0,0,0 ,0.1);
+justify-content: space-around;
+align-items: center;
+outline:none;
+bottom:5%;
+text-dacorarion:none;
+box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.1);
+}
+.cont-follow h4{
+position: absolute;
+top:0;
+}
+
+
+.cont-follow a:hover{
+filter:drop-shadow(2px 3px 10px blue);
+}
+.sidebar{
+position: absolute;
+height:17.5%;
+width:0px;
+background:white;
+box-shadow:inset 3px 3px 7px,inset -3px -3px 7px ;
+transition:0.5s ease-in;
+Display:flex;
+align-items: center;
+flex-direction: column;
+color:rgba(230,230,240,0.7);
+z-index:3;
+margin-top:0px;
+overflow: hidden;
+opacity:1;
+} 
+.sidebar h1{
+position: absolute;
+left:20px;
+}
+.sidebar h4{
+position: relative;
+top:40%;
+left:7%;
+transform:rotate(90deg);
+}
+.sidebar i{
+position: absolute;
+top:30px;
+left:4%;
+}
+.psdbar{
+position: absolute;
+height:300px;
+width:0px;
+background:rgba(21,23,24,1);
+transition:0.5s ease-out;
+
+Display:flex;
+align-items: center;
+flex-direction: column;
+color:rgba(230,230,240,0.7);
+z-index:3;
+margin-top:20px;
+overflow: hidden;
+opacity:1;
+
+}
+.del{
+position: absolute;
+right:0px;
+top:0px;
+font-size:20px;
+display:;
+z-index:3;
+background:;
+color: orange;
+}
+.actbtn{
+position: relative;
+top:40px;
+font-size:20px;
+background:;
+left:20px;
+overflow:hidden;
+width:20px;
+z-index:1;
+}
+.homec{
+position: relative;
+height:90vh;
+width:100%;
+background:;
+z-index:0;
+color:black;
+font-size:15px;
+}
+.homeside{
+position: absolute;
+right:0;
+height :58.5vh;
+width:58%;
+background:white;
+background-image:url("https://mimo.app/i/hacker.png");
+background-size:cover;
+object-fit:fill;
+object-repeat:no-repeat;
+background-position: center;
+border-top-left-radius:100%;
+border-bottom-left-radius:100%;
+border-left:3px solid lightblue;
+box-shadow:5px 3px 4px 4px rgba(21,23,24,1);
+z-index:2;
+}
+.tex{
+position: absolute;
+left:0%;
+top:30%;
+z-index:1;
+display:flex;
+flex-direction:column;
+justify-contact:space-around;
+}
+.tex h2{
+color:;
+
+}
+.tex h5{
+position:relative;
+left:3%;
+
+}
+.tex h6{
+position: relative;
+margin-top:15px;
+left:3%;
+
+}
+.homesidebar{
+position: absolute;
+right:0;
+height :99.7%;
+width:200px;
+background-image:url("https://mimo.app/i/hacker.png");
+/*background:lightblue;*/
+background-size:cover;
+object-fit:fill;
+object-repeat:no-repeat;
+background-position: center;
+border-top-left-radius:100%;
+border-bottom-left-radius:100%;
+box-shadow:5px  4px 7px ;
+left:60%;
+z-index:2;
+}
+.sdbart{
+width:256.5px;
+height:58.5vh;
+transition:0.5s ease;
+}
+.midcont{
+height:inherit;
+width:100%;
+}
+.iconz{
+position:relative;
+height:40px;
+width:40px;
+border-radius:50%;
+background:;
+display:flex;
+align-items: center;
+justify-content: center;
+box-shadow:2px 1px 4px gray, -1px -2px 7px ;
+}
+.iconz:hover{
+position:relative;
+height:40px;
+width:40px;
+border-radius:50%;
+background:;
+display:flex;
+align-items: center;
+justify-content: center;
+box-shadow:inset 2px 1px 4px gray, inset -1px -2px 7px ;
+}
+
+#insta:hover{
+
+}
+.aboutc{
+position: relative;
+height:95vh;
+width:95vw;
+background: ;
+display:flex;
+justify-content: center;
+flex-direction:column;
+
+}
+.aboutc, h3{
+position: absolute;
+display:flex;
+justify-content: center;
+
+}
+.aboutc, p{
+position: relative;
+padding:2.5%;
+}
+@media screen and (min-width:400px){
+ .homesidebar{
+ background:none;
+ }
+}
+
