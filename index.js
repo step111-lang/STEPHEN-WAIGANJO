@@ -22,14 +22,12 @@ del.addEventListener("click",()=>{
 about.addEventListener("click",()=>{
  aboutc.scrollIntoView();
 });    
-contact.addEventListener("click",()=>{
- document.documentElement.scrollBottom="0";
-});    
+
 service.addEventListener("click",()=>{
- container.scrollIntoView("-20px");
+ container.scrollIntoView();
 });    
 contact.addEventListener("click",()=>{
- contfollow.scrollIntoView()-"20px";
+ contfollow.scrollIntoView();
 });    
 home.addEventListener("click",()=>{
  homec.scrollIntoView();
