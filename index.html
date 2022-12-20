@@ -14,8 +14,11 @@ margin:0;
 padding:0;
 border-sizing:border-box;
 }
+html{
+scroll-behavior:smooth;
+}
 body{
-position:relative;
+position: absolute;
 border-sizing: border-box;
 color:rgba(23,20,23,0.7);
 background-size:;
@@ -199,7 +202,6 @@ color: orange;
 .actbtn{
 position: relative;
 top:40px;
-left:15px;
 font-size:20px;
 background:;
 overflow:hidden;
@@ -337,7 +339,7 @@ padding:2.5%;
 </style>
 <div class="navbar">
    <div >LOGO</div>
-   <div class="logo">HOME</div>
+   <div class="logo" id="home">HOME</div>
   <div class="logo" id="about">ABOUT</div>
   <div class="logo" id="service">SERVICE</div>
   <div class="logo" id="contact">CONTACT</div>
@@ -345,7 +347,7 @@ padding:2.5%;
 <div class="actbtn"><i class="fa fa-bars"></i></div>
 <div class="midcont">
 <div class="sidebar">
-<div class="del"><i class="fa fa-close">X</i></div>
+<div class="del"><i class="fa fa-close"></i></div>
 
  <div class="homesidebar"></div>
 </div>
@@ -413,9 +415,15 @@ const sdbar=document.querySelector(".sidebar");
 const del=document.querySelector(".del");
 const actbtn=document.querySelector(".actbtn");
 const about=document.querySelector("#about");
+const home=document.querySelector("#home");
+const homec=document.querySelector(".homec");
+
 const homesidebar=document.querySelector(".homesidebar");
 const contact=document.querySelector("#contact");
 const service=document.querySelector("#service");
+const aboutc=document.querySelector(".aboutc");
+const container=document.querySelector(".container");
+const contfollow=document.querySelector(".cont-follow");
 actbtn.addEventListener("click",()=>{
  sdbar.classList.toggle("sdbart");
  
@@ -424,13 +432,19 @@ del.addEventListener("click",()=>{
  sdbar.classList.toggle("sdbart");
 });    
 about.addEventListener("click",()=>{
- document.documentElement.scrollBottom="200vh";
+ aboutc.scrollIntoView();
 });    
 contact.addEventListener("click",()=>{
  document.documentElement.scrollBottom="0";
 });    
 service.addEventListener("click",()=>{
- document.documentElement.scrollBottom="300vh";
+ container.scrollIntoView();
+});    
+contact.addEventListener("click",()=>{
+ contfollow.scrollIntoView();
+});    
+home.addEventListener("click",()=>{
+ homec.scrollIntoView();
 });    
    </script>
 </body>
