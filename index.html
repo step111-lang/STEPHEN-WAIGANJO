@@ -204,6 +204,7 @@ position: relative;
 top:40px;
 font-size:20px;
 background:;
+left:20px;
 overflow:hidden;
 width:20px;
 z-index:1;
@@ -214,6 +215,8 @@ height:90vh;
 width:100%;
 background:;
 z-index:0;
+color:black;
+font-size:15px;
 }
 .homeside{
 position: absolute;
@@ -309,13 +312,13 @@ box-shadow:inset 2px 1px 4px gray, inset -1px -2px 7px ;
 
 }
 .aboutc{
-position: absolute;
+position: relative;
 height:95vh;
 width:95vw;
-background:;
+background: ;
 display:flex;
 justify-content: center;
-
+flex-direction:column;
 
 }
 .aboutc, h3{
@@ -325,9 +328,7 @@ justify-content: center;
 
 }
 .aboutc, p{
-position: absolute;
-display:flex;
-
+position: relative;
 padding:2.5%;
 }
 @media screen and (min-width:400px){
@@ -347,7 +348,7 @@ padding:2.5%;
 <div class="actbtn"><i class="fa fa-bars"></i></div>
 <div class="midcont">
 <div class="sidebar">
-<div class="del"><i class="fa fa-close"></i></div>
+<div class="del"><i class="fa fa-close">X</i></div>
 
  <div class="homesidebar"></div>
 </div>
@@ -362,7 +363,7 @@ padding:2.5%;
  </div>
 </div>
 <div class="aboutc">
-<h3 style="position: absolute; top:-15px;">ABOUT</h3><br>
+<h3 style="position: relative; top:0px;">ABOUT</h3><br>
 <p>
 <li>Hello there, my name is Stephen waiganjo,i am programmer with tons of experience in running and creating various projects.<br>
 marriage status:<strong>not married</strong><br>
@@ -398,7 +399,7 @@ but still searching.
 </div>
 <div class="cont-follow">
  <h4>lets get connected</h4>
-<div class="iconz"><i class="fa fa-whatsapp" style="font-size:24px; color: green;" id="wa"><a href="https://wa.me/+254794349600"></a></i></div>
+<div class="iconz"><a href="https://wa.me/+254794349600"><i class="fa fa-whatsapp" style="font-size:24px; color: green;" id="wa"></i></a></div>
 <div class="iconz"><i class="fa fa-instagram" style="font-size:24px; color:red;" id="insta"></i> </div>
  <div class="iconz"><i class="fa fa-telegram" style="font-size:24px; color:blue;" id="tele"></i>  </div>
 </div>
@@ -438,10 +439,10 @@ contact.addEventListener("click",()=>{
  document.documentElement.scrollBottom="0";
 });    
 service.addEventListener("click",()=>{
- container.scrollIntoView();
+ container.scrollIntoView("-20px");
 });    
 contact.addEventListener("click",()=>{
- contfollow.scrollIntoView();
+ contfollow.scrollIntoView()-"20px";
 });    
 home.addEventListener("click",()=>{
  homec.scrollIntoView();
