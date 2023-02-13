@@ -217,7 +217,7 @@ font-size:15px;
 position: absolute;
 right:0;
 height :58.5vh;
-width:58%;
+width:50%;
 background:white;
 background-image:url("https://mimo.app/i/hacker.png");
 background-size:cover;
@@ -232,7 +232,7 @@ z-index:2;
 }
 .tex{
 position: absolute;
-left:0%;
+left:2%;
 top:30%;
 z-index:1;
 display:flex;
@@ -240,18 +240,18 @@ flex-direction:column;
 justify-contact:space-around;
 }
 .tex h2{
-color:;
+color: navy;
+
+}
+.tex h4{
+position:relative;
+left:8%;
 
 }
 .tex h5{
-position:relative;
-left:3%;
-
-}
-.tex h6{
 position: relative;
-margin-top:15px;
-left:3%;
+margin-top:5px;
+left:15%;
 
 }
 .homesidebar{
@@ -348,6 +348,7 @@ width:95vw;
 background: ;
 display:flex;
 justify-content: center;
+align-items: center;
 flex-direction:column;
 align-items: center;
 }
@@ -355,10 +356,11 @@ align-items: center;
 position: absolute;
 top:0;
 }
-.aboutc p{
-position: absolute;
-padding:2.5%;
-justify-content:none;
+.aboutc li{
+position: relative;
+
+justify-content:;
+left:5%;
 }
 .backt{
 position:fixed;
@@ -371,17 +373,57 @@ right:0;
 transform:scale(1);
 color:red;
 }
-
-
+.messb{
+position: absolute;
+top:200%;
+left:20%;
+font-weight:bold;
+width:100%;
+color:navy;
+}
+.mesd{
+display:none;
+}
 @media screen and (min-width:400px){
  .homesidebar{
  background:none;
  }
 }
-/*
-<div class="foot">
-<h5><label>GMAIL:</label>stephelp@gmail.com</h5>
-<h5><label>CONTACT:</label>0794349600</h5>
-<h5><label>LOCATION:</label>Nairobi </h5>
-<h5><label>©.</label>copyright </h5>
-*/
+@media screen and (min-width:450px){
+ body{
+ min-height:100vh;
+ }
+.navbar{
+display:none;
+}
+.container{
+display:none;
+}
+.homeside{
+display:none;
+}
+.homesidebar{
+display:none;
+}
+.aboutc{
+display:none;
+}
+.cont-follow{
+display:none;
+}
+.homec{
+display:none;
+}
+.actbtn,.backt{
+display:none;
+}
+.mesd{
+position: absolute;
+top:50%;
+left:30%;
+font-weight:bold;
+display:block;
+font-size:20px;
+}
+}
+
