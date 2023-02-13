@@ -12,13 +12,13 @@ const service=document.querySelector("#service");
 const aboutc=document.querySelector(".aboutc");
 const container=document.querySelector(".container");
 const contfollow=document.querySelector(".cont-follow");
-actbtn.addEventListener("click",()=>{
+/*actbtn.addEventListener("click",()=>{
  sdbar.classList.toggle("sdbart");
  
 });
 del.addEventListener("click",()=>{
  sdbar.classList.toggle("sdbart");
-});    
+});  */  
 about.addEventListener("click",()=>{
  aboutc.scrollIntoView();
 });    
