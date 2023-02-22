@@ -17,13 +17,13 @@ const aboutc=document.querySelector(".aboutc");
 const backt=document.querySelector(".backt");
 const container=document.querySelector(".container");
 const contfollow=document.querySelector(".cont-follow");
-actbtn.addEventListener("click",()=>{
+/*actbtn.addEventListener("click",()=>{
  sdbar.classList.toggle("sdbart");
  
 });
 del.addEventListener("click",()=>{
  sdbar.classList.toggle("sdbart");
-});    
+}); */   
 about.addEventListener("click",()=>{
  aboutc.scrollIntoView();
 });    
