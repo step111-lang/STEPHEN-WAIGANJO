@@ -416,7 +416,7 @@
         }
  @media screen and (max-width:950px){
           .navcontainer{
-            width:90%;
+            width:100%;
            font-size: 18px;
           }
           .contantcont{
@@ -485,6 +485,13 @@
             align-items: center;
             justify-content: center;
           }
-          
+           .useraccount::after{
+          content: "";
+          color: rgb(208, 211, 211);
+          position: absolute;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          left: 110%;
+          bottom: 0;
+        }
         }
         
