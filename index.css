@@ -415,7 +415,7 @@
           font-size:17px ;
         }
 @media screen and (min-width:450px){
- navcontainer {
+ .navcontainer {
    width:60%;
    font-size:15px;
   }
