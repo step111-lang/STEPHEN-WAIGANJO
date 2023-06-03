@@ -414,10 +414,77 @@
           transition: 0.1 ease;
           font-size:17px ;
         }
-@media screen and (max-width:450px){
- .navcontainer {
-   width:60%;
-   font-size:15px;
-  }
-}
+ @media screen and (max-width:950px){
+          .navcontainer{
+            width:90%;
+           font-size: 18px;
+          }
+          .contantcont{
+        
+            
+          
+          }
+          .contactpop{
+            right: 0%;
+            transition: 0s;
+          }
+          .pagenavigator{
+            width: 15%;
+          }
+          .aboutcont{
+            width: 100%;
+           
+          }
+          .imgcontabout{
+            height: 60%;
+            width: 50%;
+            left: 5%;
+            
+          }
+          .imgcontent{
+       
+      
+         
+          }
+          .servicecont{
+            position: fixed;
+            display: none;
+            justify-content: center;
+            flex-direction: row;
+            overflow: auto;
+          
+
+          }
+          .abtinfo{
+            position: relative;
+            min-width: 60%;
+            height: 40%;
+            margin-top: 10%;
+
+          }
+          .imgdis{
+            height: 90%;
+            width: 50%;
+          }
+          .leftbtn{
+            width: 40%;
+          }
+          .rightbtn{
+            width: 40%;
+          }
+          .infodis{
+         
+           flex-direction: column;
+          
+          }
+          h3{
+            margin-top: 5%;
+          }
+          .tt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+        }
         
