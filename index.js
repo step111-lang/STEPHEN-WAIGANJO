@@ -1,59 +1,75 @@
-
-
-const sdbar=document.querySelector(".sidebar");
-const del=document.querySelector(".del");
-const actbtn=document.querySelector(".actbtn");
-const about=document.querySelector("#about");
-const home=document.querySelector("#home");
-const homec=document.querySelector(".homec");
-const misd=document.querySelector(".mesd");
-
-const navbar=document.querySelector(".navbar");
-
-const homesidebar=document.querySelector(".homesidebar");
 const contact=document.querySelector("#contact");
+const home=document.querySelector("#home");
+const rnav=document.querySelector(".rnav");
+const lnav=document.querySelector(".lnav");
+const cnav=document.querySelector(".cnav");
+const chatt=document.querySelector("#chatt");
+const servicecont=document.querySelector(".servicecont");
 const service=document.querySelector("#service");
-const aboutc=document.querySelector(".aboutc");
-const backt=document.querySelector(".backt");
-const container=document.querySelector(".container");
-const contfollow=document.querySelector(".cont-follow");
-/*actbtn.addEventListener("click",()=>{
- sdbar.classList.toggle("sdbart");
- 
-});
-del.addEventListener("click",()=>{
- sdbar.classList.toggle("sdbart");
-}); */   
-about.addEventListener("click",()=>{
- aboutc.scrollIntoView();
-});    
-service.addEventListener("click",()=>{
- container.scrollIntoView();
-});    
+const about=document.querySelector("#about");
+const homecont=document.querySelector(".homecont");
+const aboutcont=document.querySelector(".aboutcont");
+const contantcont=document.querySelector(".contantcont");
+let clicked=true;
 contact.addEventListener("click",()=>{
- contfollow.scrollIntoView();
- 
-});    
+contantcont.classList.toggle("contantpop");
+contact.classList.toggle("conttoggle");
+});
+chatt.addEventListener("click",()=>{
+contantcont.classList.toggle("contantpop");
+contact.classList.toggle("conttoggle");
+});
 home.addEventListener("click",()=>{
- navbar.scrollIntoView();
-});    
-backt.addEventListener("click",()=>{
- navbar.scrollIntoView();
-});   
-const bt=document.querySelector(".bt");
-bt.addEventListener("pointerdown",()=>{
-const i=Math.floor(Math.random()*200)+1;
-const j=Math.floor(Math.random()*200)+1;
-bt.style.top=i+"px";
-bt.style.left=i+"px";
-
+homecont.style.display="flex";
+aboutcont.style.display="none";
+servicecont.style.display="none";
+home.classList.add("navadd");
+about.classList.remove("navadd");
+contact.classList.remove("conttoggle");
+service.classList.remove("navadd");
+clicked=false;
+lnav.style.width="40%";
+rnav.style.width="20%";
+cnav.style.width="20%";
+contantcont.classList.remove("contantpop");
 });
-bt.addEventListener("mouseover",()=>{
-const t=Math.floor(Math.random()*200)+1;
-const b=Math.floor(Math.random()*200)+1;
-bt.style.top=t+"px";
-bt.style.left=b+"px";
-});
+about.addEventListener("click",()=>{
+  homecont.style.display="none";
+aboutcont.style.display="flex";
+servicecont.style.display="none";
+clicked=false;
 
-   
+rnav.style.width="20%";
+lnav.style.width="20%";
+cnav.style.width="40%";
+about.classList.add("navadd");
+home.classList.remove("navadd");
+contact.classList.remove("conttoggle");
+contantcont.classList.remove("contantpop");
+service.classList.remove("navadd");
+});
+service.addEventListener("click",()=>{
+ about.classList.remove("navadd");
+home.classList.remove("navadd");
+service.classList.add("navadd");
+contact.classList.remove("conttoggle");
+contantcont.classList.remove("contantpop");
+homecont.style.display="none";
+aboutcont.style.display="none";
+servicecont.style.display="flex";
+rnav.style.width="40%";
+lnav.style.width="20%";
+cnav.style.width="20%";
+});
+    if(clicked){
+    lnav.style.width="40%";
+    rnav.style.width="15%";
+
+    home.classList.add("navadd");
+    
+
+   }else{
+    home.classList.remove("clicked");
+
+   }
     
