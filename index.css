@@ -1,449 +1,416 @@
+ *{
+        padding: o;
+        margin: 0;
+        border-sizing:border-boxing;
+        user-select: none;
+        
+        }
+      .homepg{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(black,rgb(1, 1, 43));
+      }
+      .topnavbar{
+        position: absolute;
+        top:0;
+        height: 8%;
+        width: 100%;
+        background:black;
+      }
+      .navcontainer{
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        background:rgb(19, 19, 66),blue;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-wrap: wrap;
+        flex-direction: row;
 
-*{
-margin:0;
-padding:0;
-border-sizing:border-box;
-}
-html{
-scroll-behavior:smooth;
-}
-body{
-position: absolute;
-border-sizing: border-box;
-color:rgba(23,20,23,0.7);
-background-size:;
-width:100%;
-min-height:350vh;
+      }
+      .navbtns{
+        position: relative;
+        min-width: 20%;
+        height: 90%;
+       color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        }
+       /* .navbtns:hover{
+            border-bottom: 2px solid rgb(0, 136, 255);
+            opacity: 90%;
+            transform: ease;
 
-/*background:rgba(203,230,230,1);*/
-}
-.navbar{
-position: sticky;
-min-height:40px;
-width:100%;
-background:white;
-display:flex;
-flex-direction:row;
-justify-content:space-around;
-align-items: center;
-margin-top:2px;
-}
-.logo{
-position: relative;
-font-size:15px;
-top:50%;
-font-weight:bold;
-}
-.logo:hover{
-position: relative;
-border-bottom:2px solid blue;
-color:blue;
-}
-.foot{
-position: absolute;
-display:flex;
-flex-direction:column;
-background:rgba(20,48,48,0.1);
-justify-content: center;
-align-items: center;
-font-size:12px;
-border-top:2px solid rgba(40,48,48,0.01);
-box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.1);
-width:100%;
-bottom:0;
-height:inherit;
-margin-top:auto;
+        }*/
+        .imgdis{
+          position: absolute;
+          height: 70%;
+          width: 40%;
+         
+          right: 0;
+          bottom: 10%;
+          background-repeat: no-repeat;
+          object-fit: fill;         
+           background-position: center;
+           background-size:contain;
 
-}
-.container {
-position: absolute;
-display:flex;
-width:100%;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-bottom:8%;
-background:;
-}
-.container .cont{
-position: relative;
-height:200px;
-width:200px;
-background-image:url("https://mimo.app/i/hacker.png");
-object-fit:fill;
-object-repeat:no-repeat;
-background-position: center;
-box-shadow:2px 1px 3px 3px rgba(21,20 ,23,0.05);
-display:flex;
-filter:blur(0.1px);
-margin:5%;
-align-items: center;
-flex-direction:column;
-font-size:15px;
-justify-content: ;
-z-index:1;
-border:none;
-bottom:;
-top:15px;
-}
-.container h3{
-
-}
-.cont h6{
-position: absolute;
-margin-top:47%;
-color:black;
-font-style:italic;
-transition:0.5s ease;
-}
-.cont h5{
-position: absolute;
-top:;
-}
+          background-image: url("https://mimo.app/i/hacker.png");
 
 
-.cont:hover h5{
-position: absolute;
-font-size:15px;
-transition:0.5s ease-out;
-font-weight:bold;
-}
-.cont:hover{
+        }
+        .infodis{
+          position: absolute;
+          height: 60%;
+          width: 40%;
+          bottom: 10%;
+          left:5%;
+          color: rgb(98, 123, 123);
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .useraccount{
+          position: absolute;
+          min-width: 8%;
+          height: 90%;
+          top: 10%;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          margin-left: 2%;
+          color: aqua;
+          background-repeat: no-repeat;
+          object-fit: fill;
+          background-position: center;
+          background-size:contain;
+          background-image: url("https://mimo.app/i/hacker.png");
 
-}
-.cont:hover:after{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10%;
+          z-index: 2;
+        }
+       .useraccount::after{
+          content: "stephen";
+          color: rgb(208, 211, 211);
+          position: absolute;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          left: 110%;
+          bottom: 0;
+        }
+        .useraccount::before{
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+         border: 2px solid skyblue;
+         border-radius: 10%;
+          z-index: 1;
+        }
+        h2{
+          position: absolute;
+          left:20%;
+        }
+        h3{
+          position: absolute;
+          left: 20%;
+          margin-top: 2%;
+        }
+        .rightbtn{
+        position: absolute;
+          min-height: 10%;
+          min-width: 20%;
+          background-color: rgb(103, 171, 171);
+          color: black;
+          bottom: 30%;
+          border-radius: 2%;
+          font-weight: bold;
+          font-size: 15;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+       
+        .rightbtn:hover{
+         
+          background-color:orange;
+          color:black;
+        }
+        .leftbtn{
+         
+        position: absolute;
+          min-height: 10%;
+          min-width: 20%;
+        text-decoration: underline;
+          color: skyblue;
+          bottom: 30%;
+          right: 0;
+          border-radius: 2%;
+          font-weight: bold;
+          font-size: 17px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .leftbtn:hover{
+          color: orange;
+        }
+        .contantcont{
+          position: absolute;
+          width: 30%;
+          height: 8%;
+         background-color: rgb(235, 159, 18);
+          top: 7.4%;
+          right: -29%;
+         border-radius: 2px 0 2px 0;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content:space-around;
+          transition: 0.2s ease;
+         
+        }
+        .contantpop{
+         
+          right:0%;
 
-}
-.cont-follow{
-position: absolute;
-display:flex;
-height:5%;
-width:100%;
-background:rgba(0,0,0 ,0.1);
-justify-content: space-around;
-align-items: center;
-outline:none;
-bottom:0%;
-text-dacorarion:none;
-box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.1);
-}
-.cont-follow h4{
-position: absolute;
-top:0;
-}
+        }
+        .contantcont::after{
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 3%;
+          background-color:skyblue;
+          left: 0;
+        }
+        .contactselection{
+          position: relative;
+          width:20%;
+          height: 90%;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          color: white;
+          justify-content: center;
+          background: rgb(60, 54, 54);
+        }
+        .contactselection::after{
+          content: "";
+          position: absolute;
+          height: 80%;
+          width: 80%;
+          border: 2px solid white;
+          display: flex;
+          align-items: center;
+          border-radius: 5px;
+
+        }
+        .contactselection:hover{
+         box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+         transition: 0.2s ease;
+
+        }
+        .contactselection:nth-child(1){
+          position: relative;
+          left:0%;
+          font-size: 18px;
+        
+          background-color: rgb(31, 160, 96);
+
+        }
+        .contactselection:nth-child(2){
+      background-color: red;
+
+        }
+        .contactselection:nth-child(3){
+          background-color: rgb(31, 128, 161);
+
+        }
+        .contactselection:nth-child(4){
+
+        background-color: skyblue;
+        }
+        .homecont{
+        transition: 0.1 ease;
+        }
+        .clicked{
+          border-bottom: 2px solid skyblue;
+        }
+        .footer{
+          position: absolute;
+          bottom: 0;
+         height: 6%;
+         width: 100%;
+         background-color:black;
+         color: aliceblue;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 15px;
 
 
-.cont-follow a:hover{
-filter:drop-shadow(2px 3px 10px blue);
-}
-.sidebar{
-position: absolute;
-height:17.5%;
-width:0px;
-background:white;
-box-shadow:inset 3px 3px 7px,inset -3px -3px 7px ;
-transition:0.5s ease-in;
-Display:flex;
-align-items: center;
-flex-direction: column;
-color:rgba(230,230,240,0.7);
-z-index:3;
-margin-top:0px;
-overflow: hidden;
-opacity:1;
-} 
-.sidebar h1{
-position: absolute;
-left:20px;
-}
-.sidebar h4{
-position: relative;
-top:40%;
-left:7%;
-transform:rotate(90deg);
-}
-.sidebar i{
-position: absolute;
-top:30px;
-left:4%;
-}
-.psdbar{
-position: absolute;
-height:300px;
-width:0px;
-background:rgba(21,23,24,1);
-transition:0.5s ease-out;
+        }
+        .pagenavigator{
+          position: absolute;
+          bottom: 7%;
+          min-height: 2%;
+          min-width: 4%;
+         
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .rnav{
+          position:absolute;
+          height: 80%;
+          width: 15%;
+          right: 0;
+          background-color: aqua;
+          border-radius: 25px;
+          transition: 0.1s ease;
+        }
+        .cnav{
+          position:absolute;
+          height: 80%;
+          width: 15%;
+          
+          background-color: aqua;
+          border-radius: 25px;
+          transition: 0.1s ease;
+        }
+        .lnav{
+          position: absolute;
+          height: 80%;
+          width: 50%;
+          left: 0;
+          background-color: aqua;
+          border-radius: 25px;
+          transition: 0.1s ease;
 
-Display:flex;
-align-items: center;
-flex-direction: column;
-color:rgba(230,230,240,0.7);
-z-index:3;
-margin-top:20px;
-overflow: hidden;
-opacity:1;
+        }
+        .abtinfo{
+          position: relative;
+          height: 70%;
+          width: 30%;
+          background-color: rgb(17, 16, 16);
+          box-shadow: 4px 4px 7px,-4px -4px -7px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
 
-}
-.del{
-position: absolute;
-right:0px;
-top:0px;
-font-size:20px;
-display:;
-z-index:3;
-background:;
-color: orange;
-}
-.actbtn{
-position: relative;
-top:40px;
-font-size:20px;
-background:;
-left:10px;
-overflow:hidden;
-width:20px;
-z-index:1;
-}
-.homec{
-position: relative;
-height:90vh;
-width:100%;
-background:;
-z-index:0;
-color:black;
-font-size:15px;
-}
-.homeside{
-position: absolute;
-right:0;
-height :58.5vh;
-width:50%;
-background:white;
-background-image:url("https://mimo.app/i/hacker.png");
-background-size:cover;
-object-fit:fill;
-object-repeat:no-repeat;
-background-position: center;
-border-top-left-radius:100%;
-border-bottom-left-radius:100%;
-border-left:3px solid lightblue;
-box-shadow:5px 3px 4px 4px rgba(21,23,24,1);
-z-index:2;
-}
-.tex{
-position: absolute;
-left:2%;
-top:30%;
-z-index:1;
-display:flex;
-flex-direction:column;
-justify-contact:space-around;
-}
-.tex h2{
-color: navy;
+        }
+        .aboutcont{
+           
+          position: absolute;
+         height: 60%;
+         width: 50%;
+         display: none;
+        }
+        .advt{
+          position: absolute;
+          width: 80%;
+          height: 10%;
+          background-color: rgb(23, 24, 25);
+          bottom: -5%;
+          left: -10%;
+          display: flex;
+          align-items: center;
+        }
+        .navadd{
+          border-bottom: 2px solid rgb(29, 163, 170);
+        }
+        .tt{
+          position: absolute;
+          top:0%;
+          height: 15%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-weight: bold;
+       
+          color: skyblue;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #contact{
+        
 
-}
-.tex h4{
-position:relative;
-left:8%;
+        }
+        .conttoggle{
+          background-color: orange;
+          transition: 0.1s ease;
+        }
+        .servicecont{
+        
+         position: absolute;
+          height: 80%;
+          width: 100%;
+          display: none;
+          align-items: center;
+          justify-content: space-around;
+          transition: 0.1s ease;
+          flex-wrap: wrap;
+        
 
-}
-.tex h5{
-position: relative;
-margin-top:5px;
-left:15%;
+        }
+        .imgcontabout{
+          position: absolute;
+          height: 80%;
+          width: 50%;
+ 
+          left: 0%;
+          top: 10%;
+          background-repeat: no-repeat;
+          object-fit: fill;
+          background-position: center;
+          background-size:contain;
+          background-image: url("https://mimo.app/i/hacker.png");
 
-}
-.homesidebar{
-position: absolute;
-right:0;
-height :99.7%;
-width:200px;
-background-image:url("https://mimo.app/i/hacker.png");
-/*background:lightblue;*/
-background-size:cover;
-object-fit:fill;
-object-repeat:no-repeat;
-background-position: center;
-border-top-left-radius:100%;
-border-bottom-left-radius:100%;
-box-shadow:5px  4px 7px ;
-left:60%;
-z-index:2;
-}
-.sdbart{
-width:256.5px;
-height:58.5vh;
-transition:0.5s ease;
-}
-.midcont{
-height:inherit;
-width:100%;
-}
-.iconz{
-position:relative;
-height:40px;
-width:40px;
-border-radius:50%;
-background:;
-display:flex;
-align-items: center;
-justify-content: center;
-box-shadow:2px 1px 4px gray, -1px -2px 7px ;
-}
-.iconz:hover{
-position:relative;
-height:40px;
-width:40px;
-border-radius:50%;
-background:;
-display:flex;
-align-items: center;
-justify-content: center;
-box-shadow:inset 2px 1px 4px gray, inset -1px -2px 7px ;
-}
-
-.iconz #insta:hover:after{
-content:"Instagram";
-position: absolute;
-height:2px;
-width: inherit;
-font-size:10px;
-font-weight:bold;
-background:red;
-transform: transition (50%,50%);
-left:0;
-bottom:0;
-}
-.iconz #tele:hover:after{
-content:"Telegram";
-position: absolute;
-height:2px;
-width: inherit;
-font-size:10px;
-font-weight:bold;
-background:blue;
-transform: transition (50%,50%);
-left:0%;
-bottom:0;
-transition:0.5s;
-}
-.iconz #wa:hover:after{
-content:"WhatsApp";
-position: absolute;
-height:2px;
-width: inherit;
-font-size:10px;
-font-weight:bold;
-background:green;
-transform: transition (50%,50%);
-left:-50%;
-bottom:-40%;
-transition:0.5s;
-}
-.aboutc{
-position: relative;
-height:95vh;
-width:95vw;
-background: ;
-display:flex;
-justify-content: center;
-align-items: center;
-flex-direction:column;
-align-items: center;
-}
-.aboutc h3{
-position: absolute;
-top:0;
-}
-.aboutc li{
-position: relative;
-
-justify-content:;
-left:5%;
-}
-.backt{
-position:fixed;
-bottom:20%;
-height:45px;
-width:25px;
-border-radius:10px 0 0 10px;
-background:silver;
-right:0;
-transform:scale(1);
-color:red;
-}
-.messb{
-position: absolute;
-top:200%;
-left:20%;
-font-weight:bold;
-width:100%;
-color:navy;
-}
-.mesd{
-display:none;
-}
-.bt{
-position: absolute;
-top:70%;
-left:30%;
-transition:0.001s ease;
-height:30px ;
-width:200px;
-background:deepskyblue;
-border-radius:10px;
-display:none;
-align-items: center;
-justify-content: center;
-font-size:12px;
-font-weight:bold;
-outline:none;
-z-index:7;
-}
-@media screen and (min-width:400px){
- .homesidebar{
- background:none;
- }
-}
-@media screen and (min-width:450px){
- body{
- min-height:100vh;
- }
-.bt{
-display:flex;
-}
-.navbar{
-display:none;
-}
-.container{
-display:none;
-}
-.homeside{
-display:none;
-}
-.homesidebar{
-display:none;
-}
-.aboutc{
-display:none;
-}
-.cont-follow{
-display:none;
-}
-.homec{
-display:none;
-}
-.actbtn,.backt{
-display:none;
-}
-.mesd{
-position: absolute;
-top:50%;
-left:30%;
-font-weight:bold;
-display:block;
-font-size:20px;
-}
-}
-
+        }
+        .imgcontent{
+          position: absolute;
+          
+          width: 40%;
+          top: 20%;
+          right: 0%;
+          color: aqua;
+          font-weight: bold;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          display: flex;
+        align-items: center;
+          flex-direction: column;
+          list-style-type: none;
+          -webkit-mask-image: linear-gradient(000,rgba(0,0,0,0.2));
+          mask-image: linear-gradient(000,rgba(0,0,0,0.2));
+        }
+        .infocont{
+          position: absolute;
+          bottom: 7%;
+          height: 70%;
+          width: 90%;
+         background-color: silver;
+          color: rgb(34, 52, 61);
+          font-weight: bold;
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 5%;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         transition: 0.1 ease;
+        }
+        .infocont:hover{
+          transition: 0.1 ease;
+          font-size:17px ;
+        }
