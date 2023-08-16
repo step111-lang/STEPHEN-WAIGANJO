@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet " href="css/all.min.css" />
     <link rel="stylesheet " href="css/fontawesome.min.css" />
     <title>newwebsite</title>
@@ -101,7 +102,7 @@
         bottom: 0;
         display: flex;
 
-        justify-content: center;
+       
       }
       .contactcont {
         position: relative;
@@ -133,6 +134,7 @@
         top: 2.5%;
         font-weight: bold;
         font-size: 1.5rem;
+        left: 40%;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
@@ -147,8 +149,12 @@
         top: 10%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        font-size: 1.5rem;
         align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvet
+      }
+      .content li{
+        padding: 1.5rem;
       }
       .contenthome {
         position: relative;
@@ -156,7 +162,7 @@
         height: 85vh;
         width: 90vw;
         top: 2%;
-        font-size: 200px;
+        font-size: 1.7rem;
         color: white;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       }
@@ -201,8 +207,7 @@
 
         justify-content: end;
       }
-      .contenthome h4 {
-        z-index: 8px;
+      .contenthome {
         animation: gas 5s linear infinite;
         transition: 2s fade;
       }
@@ -274,6 +279,9 @@
         z-index: 8;
         transition: 0.2s ease;
         background-color: rgb(156, 160, 153);
+        font-size: 1.0rem;
+        font-weight: bold;
+        padding: 1rem;
       }
       .contentcovers {
         position: absolute;
@@ -281,6 +289,9 @@
         width: 100%;
         top: 100%;
         z-index: 8;
+        font-size: 1.0rem;
+        font-weight: bold;
+        padding: 1rem;
         transition: 0.2s ease;
         background-color: rgb(156, 160, 153);
       }
@@ -290,6 +301,9 @@
         width: 100%;
         top: 100%;
         z-index: 8;
+        font-size: 1.0rem;
+        font-weight: bold;
+        padding: 1rem;
         transition: 0.2s ease;
         background-color: rgb(156, 160, 153);
       }
@@ -321,43 +335,46 @@
         width: 5rem;
         margin-bottom: 4%;
         border: 2px solid red;
-        background-color: blue;
+       
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .bottomtextarea{
-       position: relative;
-       height: 65%;
-       width: 90%;
-    
-       top: 15%;
-       display: flex;
- align-items: center;
- 
- flex-direction: row;
-     }
-      textarea{
-      height: 80%;
-      width: 30%;
-      font-weight: bold;
-      top: 10%;
-      outline: none;
-      border: 2px solid gray;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    button{
-      position:relative;
-      height: 2rem;
-      width: 3rem;
-      bottom: -33%;
-    }
-    .feedback{
-  position: absolute;
-  width: 60%;
-  height: 80%;
-  background-color: black;
-  right: 0;
- }
-  
+      .bottomtextarea {
+        position: relative;
+        height: 65%;
+        width: 90%;
+
+        top: 15%;
+        display: flex;
+        align-items: center;
+
+        flex-direction: row;
+      }
+      textarea {
+        height: 80%;
+        width: 30%;
+        font-weight: bold;
+        top: 10%;
+        outline: none;
+        border: 2px solid gray;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      button {
+        position: relative;
+        height: 2rem;
+        width: 3rem;
+        bottom: -33%;
+      }
+      .feedback {
+        position: absolute;
+        width: 60%;
+        height: 80%;
+        background-color: black;
+        right: 0;
+      }
+
       @media screen and (max-width: 650px) {
         header {
           position: relative;
@@ -433,7 +450,7 @@
           display: flex;
 
           flex-direction: column;
-          justify-content: space-between;
+        
         }
         .contentbox {
           width: 100%;
@@ -470,21 +487,55 @@
         .contactcircles {
           height: 4rem;
           width: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        textarea{
-          position:relative;
+        textarea {
+          position: relative;
           height: 50%;
           width: 60%;
           top: -15%;
         }
-        button{
+        button {
           top: 5%;
         }
-        .feedback{
+        .feedback {
           height: 50%;
           width: 100%;
           bottom: -10%;
-          
+        }
+        .textdisplay {
+          position: absolute;
+          width: 100%;
+          height: 50%;
+
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+        }
+        .imgdisp {
+          position: relative;
+          top: 10%;
+          height: 50%;
+          width: 110%;
+          right: 0;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .contenthome {
+          color: black;
         }
       }
       @media screen and (max-width: 1000px) {
@@ -537,7 +588,26 @@
         position: absolute;
         border: 2px solid green;
       }
-  
+      .contenthome h4 {
+      }
+      .contactcircles i{
+
+        font-size: 1.5rem;
+      }
+      .textdisplay {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
     </style>
     <div class="bodycont">
       <div class="topnav">
@@ -547,35 +617,56 @@
             <div class="heading">LOGO</div>
             <div class="navbtns">
               <div class="home" id="cnav">home</div>
-              <div class="service" id="cnav">service</div>
               <div class="about" id="cnav">about</div>
-              <div class="contant" id="cnav">contant</div>
+              <div class="service" id="cnav">service</div>
+             
+              <div class="contant" id="cnav">contact</div>
             </div>
           </div>
         </header>
       </div>
       <div class="smll">
         <div class="homec" id="cnav">home</div>
-        <div class="servicec" id="cnav">service</div>
         <div class="aboutc" id="cnav">about</div>
-        <div class="contantc" id="cnav">contant</div>
+        <div class="servicec" id="cnav">service</div>
+        
+        <div class="contantc" id="cnav">contact</div>
       </div>
       <div class="rest_cont">
         <div class="homecont">
           <div class="contenthome">
-            <h4>home</h4>
-            <h4>pg</h4>
-            <div class="imgdisp"></div>
+            <div class="textdisplay">
+              <h3>Hello There</h3>
+              <h4>my name is</h4>
+              <h2>STEPHEN WAIGANJO</h2>
+              <h4 >im a programmer</h4>
+            </div>
+            <div class="imgdisp"><a href="shoe2.jpg"></a></div>
+          </div>
+        </div>
+        <div class="aboutcont">
+          <div class="head">about</div>
+          <div class="content">
+            
+              <li>Hello there, my name is Stephen waiganjo,i am programmer with tons of experience in running and crea
+              marriage status:<strong>not married</strong><br>
+              but still searching. 
+              </li>
+              <li>Number of programming languages i know are more than ten </li>
           </div>
         </div>
         <div class="servicecont">
           <div class="head">service</div>
-          <div class="content">
+          <div class="content" style="display: flex; justify-content: space-around;">
             <div class="contentbox">
               <div class="contentcolor" id="first"></div>
               <div class="contentdisp">
                 <div class="contenthov">commercial website</div>
-                <div class="contentcoverf"></div>
+                <div class="contentcoverf">
+                  Attract more of your clients from all around the world <br>
+                  display your stock for advertisment <br>
+                 let your clients make orders through your website without the need to visit your shop and be always one step ahead of
+                </div>
               </div>
               <div class="readmore" id="freadmore">
                 Readmore<i class="fa fa-arrow-right" id="arrow"></i>
@@ -585,7 +676,13 @@
               <div class="contentcolor" id="second"></div>
               <div class="contentdisp">
                 <div class="contenthov">personal website</div>
-                <div class="contentcovers"></div>
+                <div class="contentcovers">
+                  advertise yourself , share what you have to the world.<br> 
+                  lets get you connected to the world 
+                 with your own personal website<br>
+                 cheap and well designed to sort your needs. <br>
+                   
+                </div>
               </div>
               <div class="readmore" id="sreadmore">
                 Readmore<i class="fa fa-arrow-right" id="arrow"></i>
@@ -595,7 +692,9 @@
               <div class="contentcolor" id="third"></div>
               <div class="contentdisp">
                 <div class="contenthov">Blog</div>
-                <div class="contentcovert"></div>
+                <div class="contentcovert">
+                  Its time to elevate and show this suckers they know nothing<br>
+                </div>
               </div>
               <div class="readmore" id="treadmore">
                 Readmore<i class="fa fa-arrow-right" id="arrow"></i>
@@ -603,28 +702,24 @@
             </div>
           </div>
         </div>
-        <div class="aboutcont">
-          <div class="head">about</div>
-          <div class="content"></div>
-        </div>
+       
+       
+       
+       
         <div class="contactcont">
           <div class="head">contact</div>
           <div class="content">
             <div class="contactselect">
-              <div class="contactcircles"></div>
-              <div class="contactcircles"></div>
+              <div class="contactcircles"><i class="fa fa-whatsapp"></i></div>
+              <div class="contactcircles"><i class="fa fa-instagram"></i></div>
               <div class="contactcircles"></div>
 
               <div class="contactcircles"></div>
-             
-
-              </div>
-              <div class="bottomtextarea">
-                <textarea placeholder="textarea">
-
-                </textarea>
-                <button>send</button>
-                <div class="feedback"></div>
+            </div>
+            <div class="bottomtextarea">
+              <textarea placeholder="textarea"> </textarea>
+              <button>send</button>
+              <div class="feedback"></div>
             </div>
           </div>
         </div>
