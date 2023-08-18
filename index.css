@@ -1,497 +1,665 @@
- *{
-        padding: o;
+
+      * {
+        padding: 0;
         margin: 0;
-        border-sizing:border-boxing;
+        border-sizing: border-boxing;
         user-select: none;
-        
-        }
-      .homepg{
+        scroll-behavior: smooth;
+      }
+      header {
         position: relative;
-        height: 100vh;
-        width: 100vw;
+        width: 95%;
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
-        background: linear-gradient(black,rgb(1, 1, 43));
+        background-color: aqua;
+        position: sticky;
+        z-index: 19px;
       }
-      .topnavbar{
-        position: absolute;
-        top:0;
-        height: 8%;
+      .container {
         width: 100%;
-        background:black;
+        margin: 0;
       }
-      .navcontainer{
+      .header {
+        padding: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+
+      .navbtns {
+        position: relative;
+        width: 40%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .navbtns_smart {
+        display: none;
+      }
+      .bodycont {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .rest_cont {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0%;
+        z-index: 2px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .homecont {
+        position: relative;
+        min-height: 87vh;
+
+        overflow: hidden;
+      }
+      .servicecont {
+        position: relative;
+        min-height: 93vh;
+        width: 90vw;
+        bottom: 0;
+        display: flex;
+
+        justify-content: center;
+      }
+      .aboutcont {
+        position: relative;
+        min-height: 90vh;
+        width: 90vw;
+        bottom: 0;
+        display: flex;
+
+       
+      }
+      .head {
+    position: absolute;
+    top: 2.5%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    left: 40%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+      .content {
+        position: relative;
+        background-color: aqua;
+        transition: 0.5s ease;
+
+        height: 90%;
+        width: 100%;
+        top: 10%;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue'
+      }
+      .content li{
+        padding: 1.5rem;
+      }
+      .contenthome {
+        position: relative;
+        background-color: aqua;
+        height: 85vh;
+        width: 90vw;
+        top: 2%;
+        font-size: 1.7rem;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        
+      }
+      .contentbox {
+        position: relative;
+        min-width: 30%;
+        height: 80%;
+
+        background-color: rgb(237, 235, 240);
+        box-shadow: 2px 2px 7px gray, -1px -1px 6px gray;
+        z-index: 3;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .home,
+      .about,
+      .service,
+      .contant {
+        border-bottom: 2px solid white;
+        padding: 18px;
+      }
+      .commontab {
+        border-bottom: 2px solid black;
+        transition: 0.5s ease;
+      }
+      .imgdisp {
+        position: absolute;
+        right: -14%;
+        height: 100%;
+        width: 60%;
+        bottom: 0%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        aspect-ratio: 16/9;
+        display: flex;
+
+        justify-content: end;
+      }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+      .contenthome {
+        animation: gas 5s linear infinite;
+        transition: 2s fade;
+      }
+      .smll {
+        display: none;
+      }
+      .openbar {
+        display: none;
+      }
+      .readmore {
+        position: absolute;
+        bottom: 5%;
+        width: 60%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: 0.5s ease;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(216, 16, 16);
+      }
+      .readmore:hover {
+        color: white;
+      }
+      .contentdisp {
+        position: relative;
+        height: 55%;
+        width: 80%;
+        top: 20%;
+        opacity: 100%;
+        overflow: hidden;
+
+        background-image: url("shoe2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      .contenthov {
         position: absolute;
         height: 100%;
-        width: 40%;
-        background:rgb(19, 19, 66),blue;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        flex-wrap: wrap;
-        flex-direction: row;
-
-      }
-      .navbtns{
-        position: relative;
-        min-width: 20%;
-        height: 90%;
-       color: aqua;
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.6s ease;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 1.5rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .contenthov:hover {
+        opacity: 100%;
+        color: rgb(11, 12, 14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(231, 222, 222);
+      }
+      .contentcoverf {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 100%;
+        z-index: 8;
+        transition: 0.2s ease;
+        background-color: rgb(156, 160, 153);
+        font-size: 1.0rem;
+        font-weight: bold;
+        display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+        padding: 0.5rem;
+      }
+      .contentcovers {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 100%;
+        z-index: 8;
+        font-size: 1.0rem;
+        font-weight: bold;
+    
+        transition: 0.2s ease;
+        background-color: rgb(156, 160, 153);
+        display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+       padding: 0.5rem;
+      }
+      .contentcovert {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 100%;
+        z-index: 8;
+        font-size: 1.0rem;
+        font-weight: bold;
+      
+        transition: 0.2s ease;
+        background-color: rgb(156, 160, 153);
+        display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+       padding: 0.5rem;
+      }
+      .clickedreadmore {
+        top: 0;
+      }
+      .clickedreadmores {
+        top: 0;
+      }
+      .clickedreadmoret {
+        top: 0;
+      }
+
+
+      .textdisplay {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .contactcont {
+   position: relative;
+   min-height: 90vh;
+   min-width: 90vw;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+justify-content: space-around;
+   flex-direction: column;
+ }
+ .contactselect{
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  background-color: ;
+  border-bottom: 2px solid red;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+ }
+ .contactcircles{
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 25%;
+ }
+  .bottomtextarea{
+    position: absolute;
+    height: 70%;
+    top:35%;
+    width: 100%;
+    
+   
+  }
+  input{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background-color:;
+    border-radius: 25px;
+    resize: none;
+    padding: 0 25px 0 25px;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sa
+    font-weight: bold;
+  }
+.feedback{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: ;
+  right: 0;
+  top: 0%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+button{
+  position: absolute;
+  top: 48%;
+  left: 34%;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+footer{
+  position: relative;
+  height: 10vh;
+  width: 100%;
+  background-color: aqua;
+  bottom: 0;
+  margin-top: 1rem;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: bold;
+}
+    .feeds{
+  position: relative;
+  width: 90%;
+  background-color: ;
+  min-height: 10%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1.6rem;
+  color: black;
+  border-bottom: 2px solid gray;
+
+ }
+      @media screen and (max-width: 650px) {
+        header {
+          position: relative;
+          border-radius: 15px;
+          top: 1%;
+          z-index: 17;
         }
-       /* .navbtns:hover{
-            border-bottom: 2px solid rgb(0, 136, 255);
-            opacity: 90%;
-            transform: ease;
-
-        }*/
-        .imgdis{
-          position: absolute;
-          height: 70%;
-          width: 40%;
-         
-          right: 0;
-          bottom: 10%;
-          background-repeat: no-repeat;
-          object-fit: fill;         
-           background-position: center;
-           background-size:contain;
-
-          background-image: url("https://mimo.app/i/hacker.png");
-
-
+        .navbtns {
+          width: 0%;
+          display: none;
         }
-        .infodis{
-          position: absolute;
-          height: 60%;
-          width: 40%;
-          bottom: 10%;
-          left:5%;
-          color: rgb(98, 123, 123);
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        .useraccount{
-          position: absolute;
-          min-width: 8%;
-          height: 90%;
-          top: 10%;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-          margin-left: 2%;
-          color: aqua;
-          background-repeat: no-repeat;
-          object-fit: fill;
-          background-position: center;
-          background-size:contain;
-          background-image: url("https://mimo.app/i/hacker.png");
 
+        .smll {
+          position: absolute;
+          margin-top: 18%;
+          border-radius: 6%;
+          transition: 0.3s ease;
+          z-index: 6;
+
+          width: 90%;
+          background-color: rgb(129, 120, 120);
+
+          top: -100%;
+          display: flex;
+          align-items: center;
+
+          flex-direction: column;
+        }
+        #cnav {
+          position: relative;
+          width: 90%;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 10%;
-          z-index: 2;
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          margin-top: 10%;
+
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
         }
-       .useraccount::after{
-          content: "stephen";
-          color: rgb(208, 211, 211);
+        .openbar {
+          position: relative;
+          left: -90%;
+          padding: 5px;
+          display: flex;
+          transition: 0.5s ease;
+        }
+        .clicked {
           position: absolute;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          left: 110%;
-          bottom: 0;
+
+          top: 0;
         }
-        .useraccount::before{
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 100%;
-         border: 2px solid skyblue;
-         border-radius: 10%;
-          z-index: 1;
-        }
-        h2{
-          position: absolute;
-          left:20%;
-        }
-        h3{
+        .heading {
           position: absolute;
           left: 20%;
-          margin-top: 2%;
+          display: none;
         }
-        .rightbtn{
-        position: absolute;
-          min-height: 10%;
-          min-width: 20%;
-          background-color: rgb(103, 171, 171);
-          color: black;
-          bottom: 30%;
-          border-radius: 2%;
-          font-weight: bold;
-          font-size: 15;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-       
-        .rightbtn:hover{
-         
-          background-color:orange;
-          color:black;
-        }
-        .leftbtn{
-         
-        position: absolute;
-          min-height: 10%;
-          min-width: 20%;
-        text-decoration: underline;
-          color: skyblue;
-          bottom: 30%;
-          right: 0;
-          border-radius: 2%;
-          font-weight: bold;
-          font-size: 17px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .leftbtn:hover{
-          color: orange;
-        }
-        .contantcont{
-          position: absolute;
-          width: 40%;
-          height: 8%;
-         background-color: rgb(235, 159, 18);
-          top: 7.4%;
-          right: -39%;
-         border-radius: 2px 0 2px 0;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content:space-around;
-          transition: 0.2s ease;
-         
-        }
-        .contantpop{
-         
-          right:0%;
-
-        }
-        .contantcont::after{
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 3%;
-          background-color:skyblue;
-          left: 0;
-        }
-        .contactselection{
+        .topnav {
           position: relative;
-          width:20%;
-          height: 90%;
-          border-radius: 5px;
-          display: flex;
-          align-items: center;
-          color: white;
-          justify-content: center;
-          background: rgb(60, 54, 54);
-        }
-        .contactselection::after{
-          content: "";
-          position: absolute;
-          height: 80%;
-          width: 80%;
-          border: 2px solid white;
-          display: flex;
-          align-items: center;
-          border-radius: 5px;
-
-        }
-        .contactselection:hover{
-         box-shadow: 2px 2px 5px black, -2px -2px 5px black;
-         transition: 0.2s ease;
-
-        }
-        .contactselection:nth-child(1){
-          position: relative;
-          left:0%;
-          font-size: 18px;
-        
-          background-color: rgb(31, 160, 96);
-
-        }
-        .contactselection:nth-child(2){
-      background-color: red;
-
-        }
-        .contactselection:nth-child(3){
-          background-color: rgb(31, 128, 161);
-
-        }
-        .contactselection:nth-child(4){
-
-        background-color: skyblue;
-        }
-        .homecont{
-        transition: 0.1 ease;
-        }
-        .clicked{
-          border-bottom: 2px solid skyblue;
-        }
-        .footer{
-          position: absolute;
-          bottom: 0;
-         height: 6%;
-         width: 100%;
-         background-color:black;
-         color: aliceblue;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         font-size: 15px;
-
-
-        }
-        .pagenavigator{
-          position: absolute;
-          bottom: 7%;
-          min-height: 2%;
-          min-width: 4%;
-         
-          display: flex;
-          justify-content: space-evenly;
-        }
-        .rnav{
-          position:absolute;
-          height: 80%;
-          width: 15%;
-          right: 0;
-          background-color: aqua;
-          border-radius: 25px;
-          transition: 0.1s ease;
-        }
-        .cnav{
-          position:absolute;
-          height: 80%;
-          width: 15%;
-          
-          background-color: aqua;
-          border-radius: 25px;
-          transition: 0.1s ease;
-        }
-        .lnav{
-          position: absolute;
-          height: 80%;
-          width: 50%;
-          left: 0;
-          background-color: aqua;
-          border-radius: 25px;
-          transition: 0.1s ease;
-
-        }
-        .abtinfo{
-          position: relative;
-          height: 70%;
-          width: 30%;
-          background-color: rgb(17, 16, 16);
-          box-shadow: 4px 4px 7px,-4px -4px -7px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-        }
-        .aboutcont{
-           
-          position: absolute;
-         height: 60%;
-         width: 50%;
-         display: none;
-        }
-        .advt{
-          position: absolute;
-          width: 80%;
-          height: 10%;
-          background-color: rgb(23, 24, 25);
-          bottom: -5%;
-          left: -10%;
-          display: flex;
-          align-items: center;
-        }
-        .navadd{
-          border-bottom: 2px solid rgb(29, 163, 170);
-        }
-        .tt{
-          position: absolute;
-          top:0%;
-          height: 15%;
           width: 100%;
+          height: 13%;
+          background-color: white;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 15px;
-          font-weight: bold;
-       
-          color: skyblue;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          z-index: 17;
         }
-        #contact{
-        
+        .content {
+          position: relative;
+          display: flex;
 
+          flex-direction: column;
+        
         }
-        .conttoggle{
-          background-color: orange;
-          transition: 0.1s ease;
+        .contentbox {
+          width: 100%;
+          height: 33%;
+        }
+        .contentdisp {
+          height: 70%;
+          top: 15%;
+        }
+        .servicecont {
+          position: relative;
+          min-height: 200vh;
+          background-color: white;
+        }
+        .servicecont .head {
+          position: absolute;
+        }
+        .contentcolor {
+          position: absolute;
+          top: 2%;
+        }
+        .readmore {
+          position: absolute;
+          bottom: 1%;
+          height: 12%;
+          background-color: rgb(229, 18, 29);
+        }
+        .textdisplay {
+          position: absolute;
+          width: 100%;
+          height: 50%;
+
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+        }
+        .imgdisp {
+          position: relative;
+          top: 0%;
+          height: 100%;
+          width: 100%;
+          right: 0;
+         object-fit: contain;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .contenthome {
+          color: black;
+        }
+        .textdisplay h3{
+          font-size: 1.3rem;
+          z-index: 3;
+        }
+        .textdisplay h2{
+          font-size: 1.4rem;
+          z-index: 3;
+        }
+        .textdisplay h4{
+          font-size: 1.1rem;
+          z-index: 3;
         }
         .servicecont{
-        
-         position: absolute;
-          height: 80%;
-          width: 100%;
-          display: none;
-          align-items: center;
-          justify-content: space-around;
-          transition: 0.1s ease;
-          flex-wrap: wrap;
-        
-
+          background-color: aliceblue;
         }
-        .imgcontabout{
-          position: absolute;
-          height: 80%;
+   .servicecont{
+    background-color: white;
+   }
+   input{
+   position:absolute;
+   width: 80%;
+   height: 20%;
+   top: 0%;
+   left: 5%;
+   border-radius: 0px;
+   background-color: ;
+   border: 2px solid gray;
+   outline: none;
+   padding: 0 20px;
+ }
+ button{
+  position:absolute;
+  left: 78%;
+  top: 22%;
+  width: 20%;
+  outline: none;
+  border-radius: 0%;
+ }
+ .feedback{
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  right: 10%;
+  background-color: ;
+  height: 60%;
+  bottom: 0%;
+ }
+ .feeds{
+  position: relative;
+ width: 90%;
+ background-color: rgb(215, 201, 201);
+ min-height: 4%;
+ margin-top: 3%;
+ display: flex;
+ align-items: center;
+ justify-content: start;
+ padding: 1.6rem;
+ color: black;
+ overflow: hidden;
+ }
+      }
+      @media screen and (max-width: 1000px) {
+        .navbtns {
           width: 50%;
- 
-          left: 0%;
-          top: 10%;
-          background-repeat: no-repeat;
-          object-fit: fill;
-          background-position: center;
-          background-size:contain;
-          background-image: url("https://mimo.app/i/hacker.png");
-
+          transition: 0.5s ease;
         }
-        .imgcontent{
-          position: absolute;
-          
-          width: 40%;
-          top: 20%;
-          right: 0%;
-          color: aqua;
-          font-weight: bold;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          display: flex;
+        #cnav {
+          padding: 10px;
+        }
+      }
+      .heading {
+        position: absolute;
+        left: 10%;
+
+        font-size: 20px;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .topnav {
+        width: 100%;
+        display: flex;
         align-items: center;
-          flex-direction: column;
-          list-style-type: none;
-          -webkit-mask-image: linear-gradient(000,rgba(0,0,0,0.2));
-          mask-image: linear-gradient(000,rgba(0,0,0,0.2));
-        }
-        .infocont{
-          position: absolute;
-          bottom: 7%;
-          height: 70%;
-          width: 90%;
-         background-color: silver;
-          color: rgb(34, 52, 61);
-          font-weight: bold;
-          display: flex;
-          overflow: hidden;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 5%;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         transition: 0.1 ease;
-        }
-        .infocont:hover{
-          transition: 0.1 ease;
-          font-size:17px ;
-        }
- @media screen and (max-width:950px){
-          .navcontainer{
-            width:110%;
-           font-size: 18px;
-          }
-          .contantcont{
-        
-            
-          
-          }
-          .contactpop{
-            right: 0%;
-            transition: 0s;
-          }
-          .pagenavigator{
-            width: 15%;
-          }
-          .aboutcont{
-            width: 100%;
-           
-          }
-          .imgcontabout{
-            height: 60%;
-            width: 50%;
-            left: 5%;
-            
-          }
-          .imgcontent{
-       
-      
-         
-          }
-          .servicecont{
-            position: fixed;
-            display: none;
-            justify-content: center;
-            flex-direction: row;
-            overflow: auto;
-          
+        justify-content: center;
+        z-index: 17;
+      }
+      .contentcolor {
+        position: absolute;
+        width: 80%;
+        height: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 5%;
 
-          }
-          .abtinfo{
-            position: relative;
-            min-width: 60%;
-            height: 40%;
-            margin-top: 10%;
+        background-color: red;
+      }
+      .contentcolor:after {
+        content: " ";
+        position: absolute;
+        height: 105%;
+        width: 105%;
+        transform: translate(0%, 0%);
+        border: 2px solid red;
+      }
+      .contentcolor:after:nth-child(1) {
+        content: "";
+        position: absolute;
+        border: 2px solid green;
+      }
+      .contenthome h4 {
+      }
+      .contactcircles i{
 
-          }
-          .imgdis{
-            height: 90%;
-            width: 50%;
-          }
-          .leftbtn{
-            width: 40%;
-          }
-          .rightbtn{
-            width: 40%;
-          }
-          .infodis{
-         
-           flex-direction: column;
-          
-          }
-          h3{
-            margin-top: 5%;
-          }
-          .tt{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-           .useraccount::after{
-          content: "";
-          color: rgb(208, 211, 211);
-          position: absolute;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          left: 110%;
-          bottom: 0;
-        }
-        }
-        
+        font-size: 1.5rem;
+      }
+
+   
