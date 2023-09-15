@@ -440,7 +440,7 @@ align-items: center;
 .smll:after{
 content:"";
 position: absolute;
-height:10%;
+height:5%;
 width:100%;
 bottom:0;
 background:aqua;
