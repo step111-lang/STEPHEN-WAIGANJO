@@ -33,11 +33,39 @@
         </header>
       </div>
       <div class="smll">
-        <div class="homec" id="cnav">home</div>
-        <div class="aboutc" id="cnav">about</div>
-        <div class="servicec" id="cnav">service</div>
+        <div class="homec" id="cnav">home
+<div class="scnav">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+     </div>
+</div>
+        <div class="aboutc" id="cnav">about
+<div class="scnav">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+     </div>
+</div>
+        <div class="servicec" id="cnav">service
+<div class="scnav">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+     </div>
+</div>
         
-        <div class="contantc" id="cnav">contact</div>
+        <div class="contantc" id="cnav">contact
+<div class="scnav">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+     </div>
+</div>
       </div>
       <div class="rest_cont">
         <div class="homecont">
@@ -143,6 +171,7 @@
       
     </div>
     <script>
+const scnav=document.querySelector(".scnav");
           const arrow = document.querySelector("#arrow"); 
       const treadmore = document.querySelector("#treadmore");
       const contentcovert = document.querySelector(".contentcovert");
@@ -173,6 +202,7 @@
       /* navbtns_smart.addEventListener("click", () => {
         navbtns_smart.classList.add("navbtns-smart-nav");
       });*/
+
       about.addEventListener("click", () => {
         aboutcont.scrollIntoView();
         about.classList.add("commontab");
