@@ -442,9 +442,10 @@ content:"";
 position: absolute;
 height:5%;
 width:60%;
-bottom:0;
-border-top:2px solid gray;
-background:aqua;
+bottom:-3%;
+
+background-color: rgb(129, 120, 120);
+        
 display:flex;
 align-items: center;
 justify-content: center;
@@ -454,6 +455,7 @@ clip-path: polygon(
 75% 0%, 
 100% 100%, 
 0% 100%);
+     transform:rotate(180deg);
 }
 .smll:before {
 content:"";
