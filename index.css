@@ -473,6 +473,44 @@ clip-path: polygon(
 0% 100%);
 transform:rotate(180deg);
 }
+        .sider{
+position: absolute;
+height:3%;
+width:80%;
+top:50%;
+right:-41%;
+background-color: rgb(129, 120, 120);
+        
+display:flex;
+align-items: center;
+justify-content: center;
+font-weight:bold;
+clip-path: polygon(
+5% 0%,
+95% 0%,
+100% 100%, 
+0% 100%);
+transform:rotate(90deg);
+}
+.sidel{
+position: absolute;
+height:3%;
+width:80%;
+top:50%;
+left:-41%;
+background-color: rgb(129, 120, 120);
+        
+display:flex;
+align-items: center;
+justify-content: center;
+font-weight:bold;
+clip-path: polygon(
+5% 0%,
+95% 0%,
+100% 100%, 
+0% 100%);
+transform:rotate(270deg);
+}   
         #cnav {
           position: relative;
           width: 90%;
